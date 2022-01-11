@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class GameHandler : MonoBehaviour
 {
+    
+
     [SerializeField] private Snake snake;
     private LevelGrid levelGrid;
+
+   
 
     void Start()
     {
@@ -22,10 +26,5 @@ public class GameHandler : MonoBehaviour
       
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-        
-    }
+   
 }
