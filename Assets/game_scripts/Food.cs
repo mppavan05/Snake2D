@@ -42,6 +42,8 @@ public class Food : MonoBehaviour
             Myscoretext.text = "Score: " + ScoreNum;
             
         }
+
+        
     }
 }
 
