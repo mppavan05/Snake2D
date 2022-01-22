@@ -43,6 +43,11 @@ public class Food : MonoBehaviour
             
         }
 
+        else if (others.tag == "Player" && others.tag == "SplFood")
+        {
+            ScoreNum += 20;
+        }
+
         
     }
 }
