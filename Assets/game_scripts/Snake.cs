@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class Snake : MonoBehaviour
@@ -153,12 +154,24 @@ public class Snake : MonoBehaviour
         if (others.tag == "Food")
         {
             Grow();
+           
+        }
+
+        else if (others.tag == "SplFood")
+        {
+            Grow();
+            Grow();
+
+
         }
 
         else if (others.tag == "Wall")
         {
             ResetState();
+            SceneManager.LoadScene("REstart");
+
         }
+
     }
 
 }
